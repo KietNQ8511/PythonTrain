@@ -36,4 +36,4 @@ print(x + y + z) # print Pythonisawesome
 
 x = 5
 y = "John"
-print(x, y) # print (5, 'John)
+print(x, y) # print (5, 'John')
