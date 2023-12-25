@@ -83,3 +83,11 @@ for i in range(len(thislist)): # range(0, 3)
 
 # Using while loop
 # We can loop through all the index numbers
+i = 0
+while i < len(thislist):
+    print(thislist[i])
+    i = i + 1
+
+# Looping using list comprehension
+# A short hand for loop that will print all items in a list:
+[print(x) for x in thislist]
