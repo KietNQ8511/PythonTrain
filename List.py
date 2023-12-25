@@ -34,9 +34,52 @@ thislist[1:3] = ["watermelon"]  # thay thế p tử thứ 2 và remove element 3
 print(thislist)  # print ["apple", "watermelon"]
 print(len(thislist))
 
-# Insert an element
+# INSERT an element
 thislist = ["apple", "banana", "cherry"]
 thislist.insert(2, "watermelon")
 print(thislist) # print : ["apple", "banana", "watermelon" , "cherry"]
 
+# add an element in the last
+thislist.append("orange") # add an element in the last
+print(thislist) # ['apple', 'banana', 'watermelon', 'cherry', 'orange']
 
+# extend list, concerate list (add list)
+thislist = ["apple", "banana", "cherry", "banana"]
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical) # ['apple', 'banana', 'cherry', 'mango', 'pineapple', 'papaya']
+print(thislist)
+
+# REMOVE
+# if have more banana in the list , it will delete first element banana
+thislist.remove("banana")
+
+# Remove it index and get it
+print("-----")
+print(thislist.pop(1)) # remove element at position 1 and print it
+print(thislist.pop()) # Remove last element and print out
+
+# REMOVE also
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+# Del also delete element in the list (it can delete a pos, or more position)
+# Delete entire list :   (del thislist)   // the variable thislist has been removed
+del thislist[0:2]
+print(thislist)
+
+# CLEAR API
+# clear api will remove all element in the list (list will be empty list)
+thislist.clear()
+
+
+# ======================================= #
+# Loop in List
+thislist = ["apple", "banana", "cherry"]
+for x in thislist: # foreach
+    print(x) # will print each element on each line
+
+# Loop Through the Index Numbers
+print(range(len(thislist)))
+for i in range(len(thislist)): # range(0, 3)
+    print(thislist[i])
+
+# Using while loop
+# We can loop through all the index numbers
